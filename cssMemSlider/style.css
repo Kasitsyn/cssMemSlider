@@ -35,7 +35,7 @@ body {
 }
 
 .bar {
-
+    opacity: 0.5;
     cursor: pointer;
     padding: 10px;
 
@@ -103,9 +103,8 @@ input[name='r'] {
 @media (max-width: 320px) {
 
     .navigation {
-
         justify-content: center;
-
     }
+
 
 }
