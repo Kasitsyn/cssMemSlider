@@ -9,7 +9,6 @@ body {
 
 .container {
     padding: 10px;
-
     width: 400px;
     margin: 0 auto;
     border: 1px solid rgb(242, 242, 242);
@@ -17,13 +16,10 @@ body {
 
 .slider {
     width: 400px;
-
     margin: 0 auto;
     overflow: hidden;
 
 }
-
-
 
 .navigation {
     display: flex;
@@ -101,10 +97,7 @@ input[name='r'] {
 }
 
 @media (max-width: 320px) {
-
     .navigation {
         justify-content: center;
     }
-
-
 }
