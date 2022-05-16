@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(43, 40, 40);
+}
+
+.container {
+    padding: 10px;
+
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid rgb(242, 242, 242);
+}
+
+.slider {
+    width: 400px;
+
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+
+
+.navigation {
+    display: flex;
+    justify-content: end;
+}
+
+.description {
+    color: aliceblue;
+}
+
+.bar {
+
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.bar:hover .area {
+    opacity: 0.8;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.bar:active .area {
+    opacity: 1;
+    background-color: rgb(27, 54, 233);
+}
+
+.area {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: all .4s ease;
+}
+
+input[name='r'] {
+    display: none;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+
+}
+
+.slide {
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r1:checked~.bar #dot1 {
+    background-color:brown;
+}
+
+#r2:checked~.s1 {
+    margin-left: -25%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -50%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -75%;
+}
+
+@media (max-width: 320px) {
+
+    .navigation {
+
+        justify-content: center;
+
+    }
+
+}
